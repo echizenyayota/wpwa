@@ -57,9 +57,6 @@ function register_wp_questions() {
 function wpwa_comment_list( $comment, $args, $depth ) {
     global $post;
 
-    var_dump($post);
-    exit;
-
     $GLOBALS['comment'] = $comment;
 
     // Get current logged in user and author of question
@@ -75,4 +72,4 @@ function wpwa_comment_list( $comment, $args, $depth ) {
     // Get the correct/incorrect status of the answer
     $comment_id = get_comment_ID();
     $answer_status = get_comment_meta( $comment_id, "_wpwa_answer_status", true );
-} 
+}
