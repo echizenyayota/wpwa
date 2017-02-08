@@ -34,7 +34,15 @@ if ( post_password_required() )
 		</h2>
 
 		<ol class="commentlist">
-			<?php wp_list_comments( array( 'callback' => 'twentytwelve_comment', 'style' => 'ol' ) ); ?>
+			<?php
+			if(get_post_type( $post ) == "wp_question") {
+					var_dump($post);
+					exit;
+					wp_list_comments( array( 'type' => 'comment', 'callback' => 'wpwa_comment_list', 'style' => 'ol' ) );
+			}else {
+					wp_list_comments( array( 'type' => 'comment', 'callback' => 'twentytwelve_comment', 'style' => 'ol' ) );
+			}
+			?>
 		</ol><!-- .commentlist -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>

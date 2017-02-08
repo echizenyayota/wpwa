@@ -1,1 +1,4 @@
 [07-Feb-2017 01:28:42 UTC] PHP Warning:  不明なエラーが発生しました。WordPress.org またはこのサーバーの設定に何か問題が起きている可能性があります。問題が解決しない場合は<a href="https://ja.wordpress.org/support/">サポートフォーラム</a>に投稿してみてください。 (WordPress は WordPress.org との安全な接続を確立できませんでした。サーバー管理者にご連絡ください) in /var/www/wordpress/wp-includes/update.php on line 320
+[07-Feb-2017 02:02:56 UTC] PHP Parse error:  syntax error, unexpected end of file in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 79
+[07-Feb-2017 02:03:24 UTC] PHP Parse error:  syntax error, unexpected end of file in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 82
+[07-Feb-2017 02:03:53 UTC] PHP Parse error:  syntax error, unexpected end of file in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 78

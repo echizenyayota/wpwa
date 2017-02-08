@@ -53,3 +53,26 @@ function register_wp_questions() {
 
     register_post_type( 'wp_question', $args );
 }
+
+function wpwa_comment_list( $comment, $args, $depth ) {
+    global $post;
+
+    var_dump($post);
+    exit;
+
+    $GLOBALS['comment'] = $comment;
+
+    // Get current logged in user and author of question
+    $current_user           = wp_get_current_user();
+    $author_id              = $post->post_author;
+    $show_answer_status     = false;
+
+    // Set the button status for authors of the question
+    if ( is_user_logged_in() && $current_user->ID == $author_id ) {
+        $show_answer_status = true;
+    }
+
+    // Get the correct/incorrect status of the answer
+    $comment_id = get_comment_ID();
+    $answer_status = get_comment_meta( $comment_id, "_wpwa_answer_status", true );
+} 
