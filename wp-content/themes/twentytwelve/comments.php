@@ -36,8 +36,6 @@ if ( post_password_required() )
 		<ol class="commentlist">
 			<?php
 			if(get_post_type( $post ) == "wp_question") {
-					var_dump($post);
-					exit;
 					wp_list_comments( array( 'type' => 'comment', 'callback' => 'wpwa_comment_list', 'style' => 'ol' ) );
 			}else {
 					wp_list_comments( array( 'type' => 'comment', 'callback' => 'twentytwelve_comment', 'style' => 'ol' ) );
