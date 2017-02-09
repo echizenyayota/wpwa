@@ -99,12 +99,12 @@ function wpwa_comment_list( $comment, $args, $depth ) {
                 $question_status_text = 'Mark as Correct';
             }
 
-    ?>
+            ?>
     <input type="button" value="<?php echo $question_status_text; ?>"  class="answer-status answer_status-<?php echo $comment_id; ?>"
            data-ques-status="<?php echo $question_status; ?>" />
     <input type="hidden" value="<?php echo $comment_id; ?>" class="hcomment" />
 
-            <?php
-        }
-?>
+        <?php
+            }
+        ?>
 </div>
