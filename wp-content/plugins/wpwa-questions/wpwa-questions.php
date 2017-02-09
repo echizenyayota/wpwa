@@ -73,3 +73,14 @@ function wpwa_comment_list( $comment, $args, $depth ) {
     $comment_id = get_comment_ID();
     $answer_status = get_comment_meta( $comment_id, "_wpwa_answer_status", true );
 }
+
+?>
+<li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+<article id="comment-<?php comment_ID(); ?>">
+<header class="comment-meta comment-author vcard">
+<?php
+  // Display image of a tick for correct answers
+  if ( $answer_status ) {
+    echo "<div class='tick'><img src='".plugins_url( 'img/tick.png', __FILE__ )."' alt='Answer Status' /></div>";
+  }	
+?>
