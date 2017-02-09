@@ -18,3 +18,19 @@
 [09-Feb-2017 00:44:51 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
 [09-Feb-2017 00:44:51 UTC] PHP Notice:  Undefined variable: answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 83
 [09-Feb-2017 00:44:51 UTC] PHP Notice:  Undefined variable: show_answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 90
+[09-Feb-2017 00:51:44 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
+[09-Feb-2017 00:51:44 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
+[09-Feb-2017 00:51:44 UTC] PHP Notice:  Undefined variable: answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 83
+[09-Feb-2017 00:51:44 UTC] PHP Notice:  Undefined variable: show_answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 90
+[09-Feb-2017 06:42:47 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
+[09-Feb-2017 06:42:47 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
+[09-Feb-2017 06:42:47 UTC] PHP Notice:  Undefined variable: answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 107
+[09-Feb-2017 06:42:47 UTC] PHP Notice:  Undefined variable: show_answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 114
+[09-Feb-2017 06:42:48 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
+[09-Feb-2017 06:42:48 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
+[09-Feb-2017 06:42:48 UTC] PHP Notice:  Undefined variable: answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 107
+[09-Feb-2017 06:42:48 UTC] PHP Notice:  Undefined variable: show_answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 114
+[09-Feb-2017 06:44:12 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
+[09-Feb-2017 06:44:12 UTC] PHP Notice:  Trying to get property of non-object in /var/www/wordpress/wp-includes/comment-template.php on line 665
+[09-Feb-2017 06:44:12 UTC] PHP Notice:  Undefined variable: answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 107
+[09-Feb-2017 06:44:12 UTC] PHP Notice:  Undefined variable: show_answer_status in /var/www/wordpress/wp-content/plugins/wpwa-questions/wpwa-questions.php on line 114

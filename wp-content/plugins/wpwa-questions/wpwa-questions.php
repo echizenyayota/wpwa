@@ -74,6 +74,30 @@ function wpwa_comment_list( $comment, $args, $depth ) {
     $answer_status = get_comment_meta( $comment_id, "_wpwa_answer_status", true );
 }
 
+add_action( 'wp_enqueue_scripts', 'wpwa_frontend_scripts' );
+
+/*
+* Include neccessary scripts and styles for the plugin
+*
+* @return void
+*/
+function wpwa_frontend_scripts() {
+
+    wp_enqueue_script( 'jquery' );
+    wp_register_script( 'wp-questions', plugins_url( 'js/questions.js', __FILE__ ), array('jquery'), '1.0', TRUE );
+    wp_enqueue_script( 'wp-questions' );
+
+    wp_register_style( 'questions', plugins_url( 'css/questions.css', __FILE__ ) );
+    wp_enqueue_style( 'questions' );
+
+    $config_array = array(
+            'ajaxURL' => admin_url( 'admin-ajax.php' ),
+            'ajaxNonce' => wp_create_nonce( 'ques-nonce' )
+    );
+
+    wp_localize_script( 'wp-questions', 'wpwaconf', $config_array );
+}
+
 ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
 <article id="comment-<?php comment_ID(); ?>">
