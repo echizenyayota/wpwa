@@ -82,5 +82,29 @@ function wpwa_comment_list( $comment, $args, $depth ) {
   // Display image of a tick for correct answers
   if ( $answer_status ) {
     echo "<div class='tick'><img src='".plugins_url( 'img/tick.png', __FILE__ )."' alt='Answer Status' /></div>";
-  }	
+  }
 ?>
+<div>
+        <?php
+        // Display the button for authors to make the answer as correct or incorrect
+        if ( $show_answer_status ) {
+
+            $question_status = '';
+            $question_status_text = '';
+            if ( $answer_status ) {
+                $question_status = 'invalid';
+                $question_status_text = 'Mark as Incorrect';
+            } else {
+                $question_status = 'valid';
+                $question_status_text = 'Mark as Correct';
+            }
+
+    ?>
+    <input type="button" value="<?php echo $question_status_text; ?>"  class="answer-status answer_status-<?php echo $comment_id; ?>"
+           data-ques-status="<?php echo $question_status; ?>" />
+    <input type="hidden" value="<?php echo $comment_id; ?>" class="hcomment" />
+
+            <?php
+        }
+?>
+</div>
